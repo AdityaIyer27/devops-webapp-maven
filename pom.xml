@@ -112,17 +112,12 @@
     </pluginManagement>
   </build>
   
-  <repositories>
-        <repository>
-              <id>repository.springframework.maven.release</id>
-              <name>Spring Framework Maven Release Repository</name>
-              <url>http://maven.springframework.org/release</url>
-        </repository>
-        <repository>
-              <id>Appid</id>
-              <name>AppName</name>
-              <url>http://IPaddress/nexus/content/repositories/Myapps/</url>
-        </repository>
-  </repositories>
+   <distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-41-111.ap-south-1.compute.internal-snapshots</name>
+        <url>http://43.204.24.48:8081/artifactory/libs-snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
   
 </project>
